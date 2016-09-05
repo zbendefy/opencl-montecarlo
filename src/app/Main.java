@@ -13,6 +13,8 @@ import clframework.common.CLDevice;
 
 public class Main {
 
+	private static final String appVersion = "v0.8";
+	
 	public static void main(String[] args) {
 		run();
 	}
@@ -31,7 +33,7 @@ public class Main {
 
 		IShapeCalculator shape = new CircleShape();
 
-		System.out.println("OpenCL Monte Carlo integrator");
+		System.out.println("OpenCL Monte Carlo integrator " + appVersion);
 		printHelp();
 		System.out.println("");
 		System.out.println("Enter command:");
