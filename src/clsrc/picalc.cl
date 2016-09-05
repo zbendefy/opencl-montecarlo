@@ -23,7 +23,7 @@ typedef long ResultCounterType;
 typedef int ResultCounterType;
 #endif
 
-//kernels are distributed in 1 dimension. 1 thread group has the size of 32. One thread will calculate 8 iterations
+//kernels are distributed in 1 dimension. One thread will calculate THREAD_ITER_COUNT sample points
 __kernel void picalc(__global const RealNumber* rndData, __constant long* seed, __global ResultCounterType* output) 
 { 
 	__local int localHitCount;
